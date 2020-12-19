@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">McDonald\'s</string>
+
+        <string name="Dinning_reviews">186 Dining Reviews</string>
+    <string name="Delivery_reviews">1,246 Delivery Reviews</string>
+    <string name="Known_for">>Burgers, Wraps &amp; Breakfast</string>
+</resources>

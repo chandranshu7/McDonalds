@@ -1,0 +1,832 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    >
+
+
+    <!-- viewpager to show images -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerMain"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"/>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RatingBar
+
+        android:id="@+id/DiningRatingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:paddingLeft="8dp"
+        android:paddingTop="16dp"
+        android:rating="3.5"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:stepSize="0.1"
+        android:theme="@style/RatingBar"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:isIndicator="false"
+
+        />
+    <TextView
+        android:id="@+id/dinningText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="85"
+        android:paddingTop="16dp"
+        android:layout_marginLeft="8dp"
+android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <RatingBar
+        android:id="@+id/DeliveryRatingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:paddingLeft="8dp"
+        android:paddingTop="16dp"
+        android:rating="4.2"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:stepSize="0.1"
+        android:theme="@style/RatingBar"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp"
+        android:isIndicator="false"/>
+    <TextView
+        android:id="@+id/deliveryText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="85"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+android:layout_marginLeft="8dp"
+        android:textColor="#000000"/>
+
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Dinning_reviews"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:paddingLeft="8dp"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Delivery_reviews"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:paddingLeft="8dp"
+                android:textSize="12sp"
+                android:maxLines="1"/>
+        </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:paddingTop="8dp"
+        android:paddingLeft="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Bites - Burger, Fast Food"
+        android:textColor="#696969"
+        android:paddingLeft="8dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fun Republic Mall, Manimajra, Chandigarh"
+        android:textColor="#A9A9A9"
+        android:paddingLeft="8dp"
+        android:paddingTop="2dp"
+        android:textSize="16sp"
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/open_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close - "
+       android:textColor="#FA8072"
+        android:paddingLeft="8dp"
+        android:paddingTop="2dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/timings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opens at 11am"
+        android:paddingTop="2dp"
+        android:textColor="#A9A9A9"/>
+
+
+
+</LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A9A9A9"
+        android:text="Cost for two - ₹500 (approx.)"
+        android:paddingLeft="8dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"/>
+    <ImageView
+        android:id="@+id/call_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_local_phone_24"
+        android:layout_alignParentRight="true"
+        android:paddingRight="8dp"
+        android:paddingBottom="2dp"
+
+        />
+
+
+</RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EBF5FB">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/maxSafety"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+android:src="@drawable/zomato_max_safety"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Know more"
+                    android:textColor="#ED5A6B"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="10dp"
+                    android:paddingRight="8dp"
+                    />
+                    </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/maxSAfetyLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This restaurant follows all Max Safety measures to ensure your food reaches you safely."
+                    android:textColor="#696969"
+                    android:paddingLeft="8dp"
+                    />
+                    <HorizontalScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scrollbars="horizontal"
+                        android:nestedScrollingEnabled="true">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       >
+
+
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="WHO Sanitized Protocol"
+                                   android:textColor="#AED6F1 "
+                                   android:scrollHorizontally="true"
+                                   android:padding="8dp"
+                                   android:background="@drawable/rounded_corner"
+                                   android:layout_marginLeft="8dp"
+                                   android:layout_marginTop="8dp"
+                                   android:layout_marginBottom="8dp"/>
+
+
+
+
+
+
+
+
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="Staff Wears Masks"
+                                   android:textColor="#AED6F1 "
+                                   android:scrollHorizontally="true"
+                                   android:padding="8dp"
+                                   android:background="@drawable/rounded_corner"
+                                   android:layout_marginLeft="4dp"
+                                   android:layout_marginTop="8dp"
+                                   android:layout_marginBottom="8dp"/>
+
+
+
+
+
+
+
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Staff Temperature Checks"
+                           android:textColor="#AED6F1 "
+                           android:scrollHorizontally="true"
+                           android:padding="8dp"
+                           android:background="@drawable/rounded_corner"
+                           android:layout_marginLeft="4dp"
+                           android:layout_marginTop="8dp"
+                           android:layout_marginBottom="8dp"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Rider Temperature Checks"
+                           android:textColor="#AED6F1 "
+                           android:scrollHorizontally="true"
+                           android:padding="8dp"
+                           android:background="@drawable/rounded_corner"
+                           android:layout_marginLeft="4dp"
+                           android:layout_marginTop="8dp"
+                           android:layout_marginBottom="8dp"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Safely Sealed Packaging"
+                           android:textColor="#AED6F1 "
+                           android:scrollHorizontally="true"
+                           android:padding="8dp"
+                           android:background="@drawable/rounded_corner"
+                           android:layout_marginLeft="4dp"
+                           android:layout_marginTop="8dp"
+                           android:layout_marginBottom="8dp"/>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Rider Hand Sanitization"
+                           android:textColor="#AED6F1 "
+                           android:scrollHorizontally="true"
+                           android:padding="8dp"
+                           android:background="@drawable/rounded_corner"
+                           android:layout_marginLeft="4dp"
+                           android:layout_marginTop="8dp"
+                           android:layout_marginBottom="8dp"/>
+
+
+
+
+                   </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+            
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_star_outline_black_36"
+                android:padding="8dp"/>
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_add_a_photo_black_36"
+                android:padding="8dp"/>
+
+            <ImageView
+                android:id="@+id/bookmark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_bookmark_border_black_36"
+                android:padding="8dp"/>
+
+
+            <ImageView
+                android:id="@+id/report"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_report_problem_black_36"
+                android:padding="8dp"/>
+
+
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_share_black_36"
+                android:padding="8dp"
+                android:paddingBottom="-4dp"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/order_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/bike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_two_wheeler_black_48"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="16dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order food online"
+            android:textColor="#000000"
+            android:paddingTop="16dp"
+            android:paddingLeft="8dp"
+            android:textSize="15sp"
+            android:paddingBottom="2dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start building your cart"
+                android:textColor="#A9A9A9"
+                android:paddingLeft="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_forward_black_24"
+        android:layout_alignParentRight="true"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
+        android:paddingRight="8dp"/>
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A d d r e s s"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:textSize="18sp"
+            android:textStyle="normal"/>
+
+    <LinearLayout
+        android:id="@+id/getDirections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ground Floor, Fun Republic Mall, Dhillon Complex, Mainmajra, Chandigarh"
+        android:textColor="#696969"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="8dp"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy Location"
+        android:textColor="#ED5A6B"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:clickable="true"
+        android:background="?selectableItemBackgroundBorderless"/>
+
+    <TextView
+        android:id="@+id/directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Directions"
+        android:textColor="#ED5A6B"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"/>
+
+</LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="d e t a i l s"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:textSize="18sp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Known for"
+            android:textColor="#a9a9a9"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:clickable="true"
+            android:textAllCaps="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burgers, Wraps &amp; Breakfast"
+        android:textColor="#000000"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:clickable="true"
+       />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cuisines"
+        android:textColor="#a9a9a9"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:clickable="true"
+        android:textAllCaps="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burger  Fast Food"
+        android:textColor="@color/colorAccent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="average cost"
+        android:textColor="#a9a9a9"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:clickable="true"
+        android:textAllCaps="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹500 for two people (approx.)"
+        android:textColor="#000000"
+        android:paddingLeft="8dp"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exclusive of applicable taxes and charges, if any"
+        android:textColor="#696969"
+        android:paddingLeft="8dp"
+        android:paddingBottom="4dp"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash and Cards accepted"
+        android:textColor="#000000"
+        android:paddingLeft="8dp"
+        android:paddingBottom="16dp"
+        android:clickable="true"
+        android:textSize="17sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="other info"
+        android:textColor="#a9a9a9"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:clickable="true"
+        android:textAllCaps="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+            android:paddingRight="100dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check"
+            android:paddingLeft="8dp"
+            android:paddingTop="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breakfast"
+            android:textColor="#000000"
+            android:paddingLeft="6dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check"
+            android:paddingLeft="8dp"
+            android:paddingTop="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home delivery"
+            android:textColor="#000000"
+            android:paddingLeft="6dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingRight="83dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check"
+                android:paddingLeft="8dp"
+                android:paddingTop="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mall Parking"
+                android:textColor="#000000"
+                android:paddingLeft="6dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check"
+                android:paddingLeft="8dp"
+                android:paddingTop="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indoor Seating"
+                android:textColor="#000000"
+                android:paddingLeft="6dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check"
+            android:paddingLeft="8dp"
+            android:paddingTop="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wifi"
+            android:textColor="#000000"
+            android:paddingLeft="6dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+</ScrollView>
+
+
